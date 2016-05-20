@@ -1,4 +1,5 @@
-/**
- * Created by gasya on 15.05.16.
- * DigitalOutlooks corporation.
- */
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost:42123/');
+
+const UserSchema = { name: String };
+const UserModel = mongoose.model('User', UserSchema);
